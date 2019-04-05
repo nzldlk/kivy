@@ -47,7 +47,7 @@ class Renderer(Widget):
         asp = self.width / float(self.height)
         proj = Matrix().view_clip(-asp, asp, -1, 1, 1, 100, 1)
         self.canvas['projection_mat'] = proj
-        self.canvas['diffuse_light'] = (1.0, 1.0, 0.8)
+        self.canvas['diffuse_light'] = (1.0, 1.0, 2.0)
         self.canvas['ambient_light'] = (0.1, 0.1, 0.1)
         self.rot.angle += delta * 100
 
